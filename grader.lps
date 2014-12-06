@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="5">
+      <Unit0>
+        <Filename Value="grader.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="grader"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="23" Y="11"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="gui.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="gui"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="57"/>
+        <CursorPos X="17" Y="72"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="grading.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Grading"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="22"/>
+        <CursorPos X="35" Y="42"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="/usr/lib64/lazarus/components/rtticontrols/rttictrls.pas"/>
+        <UnitName Value="RTTICtrls"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:/lazarus/packager/registration/fcllaz.pas"/>
+        <UnitName Value="fcllaz"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="27" HistoryIndex="26">
+      <Position1>
+        <Filename Value="grading.pas"/>
+        <Caret Line="37" Column="63" TopLine="13"/>
+      </Position1>
+      <Position2>
+        <Filename Value="gui.pas"/>
+        <Caret Line="47" Column="24" TopLine="29"/>
+      </Position2>
+      <Position3>
+        <Filename Value="gui.pas"/>
+        <Caret Line="44" Column="15" TopLine="30"/>
+      </Position3>
+      <Position4>
+        <Filename Value="gui.pas"/>
+        <Caret Line="105" Column="15" TopLine="81"/>
+      </Position4>
+      <Position5>
+        <Filename Value="gui.pas"/>
+        <Caret Line="71" Column="27" TopLine="57"/>
+      </Position5>
+      <Position6>
+        <Filename Value="grading.pas"/>
+        <Caret Line="50" Column="19" TopLine="24"/>
+      </Position6>
+      <Position7>
+        <Filename Value="grading.pas"/>
+        <Caret Line="42" Column="3" TopLine="25"/>
+      </Position7>
+      <Position8>
+        <Filename Value="grading.pas"/>
+        <Caret Line="47" Column="38" TopLine="25"/>
+      </Position8>
+      <Position9>
+        <Filename Value="grading.pas"/>
+        <Caret Line="48" Column="42" TopLine="25"/>
+      </Position9>
+      <Position10>
+        <Filename Value="grading.pas"/>
+        <Caret Line="47" Column="15" TopLine="22"/>
+      </Position10>
+      <Position11>
+        <Filename Value="grading.pas"/>
+        <Caret Line="44" Column="38" TopLine="22"/>
+      </Position11>
+      <Position12>
+        <Filename Value="gui.pas"/>
+        <Caret Line="59" Column="172" TopLine="54"/>
+      </Position12>
+      <Position13>
+        <Filename Value="gui.pas"/>
+        <Caret Line="105" Column="3" TopLine="82"/>
+      </Position13>
+      <Position14>
+        <Filename Value="gui.pas"/>
+        <Caret Line="85" Column="3" TopLine="82"/>
+      </Position14>
+      <Position15>
+        <Filename Value="gui.pas"/>
+        <Caret Line="73" Column="17" TopLine="58"/>
+      </Position15>
+      <Position16>
+        <Filename Value="gui.pas"/>
+        <Caret Line="72" Column="17" TopLine="57"/>
+      </Position16>
+      <Position17>
+        <Filename Value="grader.lpr"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position17>
+      <Position18>
+        <Filename Value="gui.pas"/>
+        <Caret Line="72" Column="17" TopLine="57"/>
+      </Position18>
+      <Position19>
+        <Filename Value="gui.pas"/>
+        <Caret Line="73" Column="17" TopLine="58"/>
+      </Position19>
+      <Position20>
+        <Filename Value="gui.pas"/>
+        <Caret Line="74" Column="17" TopLine="59"/>
+      </Position20>
+      <Position21>
+        <Filename Value="gui.pas"/>
+        <Caret Line="73" Column="17" TopLine="58"/>
+      </Position21>
+      <Position22>
+        <Filename Value="gui.pas"/>
+        <Caret Line="74" Column="17" TopLine="59"/>
+      </Position22>
+      <Position23>
+        <Filename Value="gui.pas"/>
+        <Caret Line="73" Column="17" TopLine="58"/>
+      </Position23>
+      <Position24>
+        <Filename Value="gui.pas"/>
+        <Caret Line="74" Column="17" TopLine="59"/>
+      </Position24>
+      <Position25>
+        <Filename Value="gui.pas"/>
+        <Caret Line="73" Column="17" TopLine="58"/>
+      </Position25>
+      <Position26>
+        <Filename Value="gui.pas"/>
+        <Caret Line="72" Column="17" TopLine="57"/>
+      </Position26>
+      <Position27>
+        <Filename Value="C:/lazarus/packager/registration/fcllaz.pas"/>
+        <Caret Line="3" Column="11" TopLine="1"/>
+      </Position27>
+    </JumpHistory>
+  </ProjectSession>
+  <EditorMacros Count="0"/>
+</CONFIG>
