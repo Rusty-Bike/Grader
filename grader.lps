@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <CONFIG>
   <ProjectSession>
     <Version Value="9"/>
@@ -18,14 +18,15 @@
       <Unit1>
         <Filename Value="gui.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="gui"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="57"/>
-        <CursorPos X="17" Y="72"/>
+        <TopLine Value="83"/>
+        <CursorPos X="3" Y="85"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -52,13 +53,10 @@
       <Unit4>
         <Filename Value="C:/lazarus/packager/registration/fcllaz.pas"/>
         <UnitName Value="fcllaz"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="1" Y="1"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit4>
     </Units>
     <General>
@@ -170,10 +168,9 @@
         <Caret Line="72" Column="17" TopLine="57"/>
       </Position26>
       <Position27>
-        <Filename Value="C:/lazarus/packager/registration/fcllaz.pas"/>
-        <Caret Line="3" Column="11" TopLine="1"/>
+        <Filename Value="gui.pas"/>
+        <Caret Line="63" Column="27" TopLine="35"/>
       </Position27>
     </JumpHistory>
   </ProjectSession>
-  <EditorMacros Count="0"/>
 </CONFIG>
