@@ -8,10 +8,19 @@ uses
   Classes, SysUtils;
 
 type
+    TKey = record
+         entire: Double;
+         huge:   Double;
+         normal: Double;
+         tiny:   Double;
+    end;
     TResult = record
       earned:  Double;
       percent: Double;
+      key:     TKey;
     end;
+
+
 
     TAssignment = record
       points: Integer;
@@ -19,14 +28,16 @@ type
     end;
 
     TMistakes = record
-      major: Integer;
-      minor: Integer;
+      entire: Integer;
+      huge:   Integer;
+      normal: Integer;
+      tiny:   Integer;
     end;
 
     TModel = record
       assignment: TAssignment;
       mistakes:   TMistakes;
-      result: TResult;
+      result:     TResult;
     end;
 
   function Grade(assignment: TAssignment; mistakes: TMistakes): TResult;
@@ -34,14 +45,19 @@ type
 implementation
 function Grade(assignment: TAssignment; mistakes: TMistakes): TResult;
 var
-  minorMistake: double;
-  majorMistake: double;
   res: TResult;
 begin
-  majorMistake := assignment.points / assignment.items;
-  minorMistake := majorMistake / 4;
+  res.key.entire := assignment.points / assignment.items;
+  res.key.huge   := res.key.entire / 2;
+  res.key.normal := res.key.entire / 4;
+  res.key.tiny   := res.key.entire / 8;
 
-  res.earned := assignment.points - (mistakes.major * majorMistake + mistakes.minor * minorMistake);
+  res.earned := assignment.points -
+    ((mistakes.entire * res.key.entire)
+  + (mistakes.huge * res.key.huge)
+  + (mistakes.normal * res.key.normal)
+  + (mistakes.tiny * res.key.tiny));
+
   res.percent := res.earned / assignment.points;
 
   Grade := res;

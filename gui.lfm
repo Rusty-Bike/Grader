@@ -1,18 +1,18 @@
 object MainForm: TMainForm
-  Left = 679
-  Height = 262
-  Top = 134
-  Width = 272
+  Left = 294
+  Height = 325
+  Top = 150
+  Width = 318
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsDialog
   Caption = 'Grading Calculator'
-  ClientHeight = 262
-  ClientWidth = 272
+  ClientHeight = 325
+  ClientWidth = 318
   OnCreate = FormCreate
   Position = poScreenCenter
   LCLVersion = '1.0.10.0'
   object PointsEdit: TSpinEdit
-    Left = 72
+    Left = 88
     Height = 27
     Top = 8
     Width = 50
@@ -21,7 +21,7 @@ object MainForm: TMainForm
     Value = 10
   end
   object ItemsEdit: TSpinEdit
-    Left = 192
+    Left = 216
     Height = 27
     Top = 8
     Width = 50
@@ -30,7 +30,7 @@ object MainForm: TMainForm
     Value = 20
   end
   object ItemsLabel: TLabel
-    Left = 144
+    Left = 168
     Height = 18
     Top = 8
     Width = 32
@@ -38,7 +38,7 @@ object MainForm: TMainForm
     ParentColor = False
   end
   object PointsLabel: TLabel
-    Left = 16
+    Left = 32
     Height = 18
     Top = 8
     Width = 38
@@ -47,63 +47,101 @@ object MainForm: TMainForm
   end
   object GroupBox: TGroupBox
     Left = 16
-    Height = 64
-    Top = 40
-    Width = 240
+    Height = 96
+    Top = 48
+    Width = 288
     Caption = '# Mistakes:'
-    ClientHeight = 47
-    ClientWidth = 236
+    ClientHeight = 79
+    ClientWidth = 284
     Font.Height = -13
     Font.Name = 'Sans'
     ParentFont = False
     TabOrder = 2
-    object MajorLabels: TLabel
-      Left = 6
+    object EntireLabel: TLabel
+      Left = 14
       Height = 16
-      Top = 7
-      Width = 40
-      Caption = 'Major:'
+      Top = 9
+      Width = 42
+      Caption = 'Entire:'
       Font.Height = -13
       Font.Name = 'Sans'
       ParentColor = False
       ParentFont = False
     end
-    object MajorEdit: TSpinEdit
-      Left = 54
+    object EntireEdit: TSpinEdit
+      Left = 69
       Height = 25
       Top = 7
       Width = 50
-      OnChange = MajorEditChange
+      OnChange = EntireEditChange
       TabOrder = 0
     end
-    object MinorLabel: TLabel
-      Left = 126
+    object NormalLabel: TLabel
+      Left = 13
       Height = 16
-      Top = 7
-      Width = 40
-      Caption = 'Minor:'
+      Top = 41
+      Width = 52
+      Caption = 'Normal:'
       Font.Height = -13
       Font.Name = 'Sans'
       ParentColor = False
       ParentFont = False
     end
-    object MinorEdit: TSpinEdit
-      Left = 174
+    object NormalEdit: TSpinEdit
+      Left = 69
+      Height = 25
+      Top = 41
+      Width = 50
+      OnChange = NormalEditChange
+      TabOrder = 1
+    end
+    object TinyEdit: TSpinEdit
+      Left = 198
+      Height = 25
+      Top = 41
+      Width = 50
+      OnChange = TinyEditChange
+      TabOrder = 2
+    end
+    object TinyLabel: TLabel
+      Left = 149
+      Height = 16
+      Top = 41
+      Width = 29
+      Caption = 'Tiny:'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object HugeEdit: TSpinEdit
+      Left = 198
       Height = 25
       Top = 7
       Width = 50
-      OnChange = MinorEditChange
-      TabOrder = 1
+      OnChange = HugeEditChange
+      TabOrder = 3
+    end
+    object HugeLabel: TLabel
+      Left = 150
+      Height = 16
+      Top = 7
+      Width = 39
+      Caption = 'Huge:'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
     end
   end
   object Panel: TPanel
     Left = 16
-    Height = 104
-    Top = 144
-    Width = 240
+    Height = 136
+    Top = 176
+    Width = 288
     BevelInner = bvLowered
-    ClientHeight = 104
-    ClientWidth = 240
+    ClientHeight = 136
+    ClientWidth = 288
     Color = 1987072
     ParentColor = False
     TabOrder = 3
@@ -112,10 +150,10 @@ object MainForm: TMainForm
       Left = 8
       Height = 29
       Top = 16
-      Width = 220
+      Width = 288
       Alignment = taCenter
       Caption = '10 / 10 : 100%'
-      Constraints.MinWidth = 220
+      Constraints.MinWidth = 288
       Font.Color = clNone
       Font.Height = -24
       Font.Name = 'Sans'
@@ -126,17 +164,16 @@ object MainForm: TMainForm
       Left = 8
       Height = 8
       Top = 56
-      Width = 224
+      Width = 272
       Shape = bsTopLine
       Style = bsRaised
     end
-    object MajorScaleLabel: TLabel
-      Left = 8
+    object EntireScaleLabel: TLabel
+      Left = 16
       Height = 21
       Top = 72
       Width = 110
-      Alignment = taCenter
-      Caption = 'Major: .5'
+      Caption = 'Entire: .5'
       Constraints.MinWidth = 110
       Font.Color = clNone
       Font.Height = -17
@@ -144,13 +181,38 @@ object MainForm: TMainForm
       ParentColor = False
       ParentFont = False
     end
-    object MinorScaleLabel: TLabel
-      Left = 122
+    object NormalScaleLabel: TLabel
+      Left = 16
+      Height = 21
+      Top = 104
+      Width = 110
+      Caption = 'Normal: .25'
+      Constraints.MinWidth = 110
+      Font.Color = clNone
+      Font.Height = -17
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object HugeScaleLabel: TLabel
+      Left = 168
       Height = 21
       Top = 72
       Width = 110
-      Alignment = taCenter
-      Caption = 'Minor: .25'
+      Caption = 'Huge: .5'
+      Constraints.MinWidth = 110
+      Font.Color = clNone
+      Font.Height = -17
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object TinyScaleLabel: TLabel
+      Left = 168
+      Height = 21
+      Top = 104
+      Width = 110
+      Caption = 'Tiny:.5'
       Constraints.MinWidth = 110
       Font.Color = clNone
       Font.Height = -17
@@ -162,8 +224,8 @@ object MainForm: TMainForm
   object GradeScaleLabel: TStaticText
     Left = 16
     Height = 33
-    Top = 112
-    Width = 240
+    Top = 144
+    Width = 304
     Alignment = taCenter
     Caption = 'Grade / Scale'
     Font.Height = -24

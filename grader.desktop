@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=gedit
+GenericName=Grade Calculator
+Comment=Grade a paper
+Exec=~/repositories/projects/grader/grader
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Utility;
+Keywords=Grading;Calculator;
+

@@ -14,27 +14,35 @@ type
 
   TMainForm = class(TForm)
     Bevel: TBevel;
+    HugeLabel: TLabel;
     GroupBox: TGroupBox;
     ItemsLabel: TLabel;
+    HugeScaleLabel: TLabel;
+    HugeEdit: TSpinEdit;
+    TinyEdit: TSpinEdit;
+    TinyLabel: TLabel;
+    TinyScaleLabel: TLabel;
     PointsLabel: TLabel;
-    MinorLabel: TLabel;
-    MajorLabels: TLabel;
+    NormalLabel: TLabel;
+    EntireLabel: TLabel;
     ScoreLabel: TLabel;
-    MajorScaleLabel: TLabel;
-    MinorScaleLabel: TLabel;
+    EntireScaleLabel: TLabel;
+    NormalScaleLabel: TLabel;
     Panel: TPanel;
     PointsEdit: TSpinEdit;
     ItemsEdit: TSpinEdit;
-    MinorEdit: TSpinEdit;
-    MajorEdit: TSpinEdit;
+    NormalEdit: TSpinEdit;
+    EntireEdit: TSpinEdit;
     GradeScaleLabel: TStaticText;
     procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure HugeEditChange(Sender: TObject);
     procedure PanelClick(Sender: TObject);
     procedure PointsEditChange(Sender: TObject);
     procedure ItemsEditChange(Sender: TObject);
-    procedure MinorEditChange(Sender: TObject);
-    procedure MajorEditChange(Sender: TObject);
+    procedure NormalEditChange(Sender: TObject);
+    procedure EntireEditChange(Sender: TObject);
+    procedure TinyEditChange(Sender: TObject);
 
   private
     { private declarations }
@@ -57,16 +65,21 @@ implementation
 procedure TMainForm.UpdateView();
 begin
     ScoreLabel.Caption := FormatFloat('####0.###', Model.result.earned) + ' / ' + IntToStr(Model.assignment.points) + ': ' + FormatFloat('####0.##', Model.result.percent * 100) + '%';
-    MajorScaleLabel.Caption := 'Major: ' + IntToStr(Model.mistakes.major);
-    MinorScaleLabel.Caption := 'Minor: ' + IntToStr(Model.mistakes.minor);
+    EntireScaleLabel.Caption := 'Entire: ' + FormatFloat('####0.###', Model.result.key.entire);
+    HugeScaleLabel.Caption:= ' Huge: ' +  FormatFloat('####0.###', Model.result.key.huge);
+    NormalScaleLabel.Caption := 'Normal: ' + FormatFloat('####0.###', Model.result.key.normal);
+    TinyScaleLabel.Caption := ' Tiny: ' + FormatFloat('####0.###', Model.result.key.tiny);
 end;
 
 procedure TMainForm.UpdateModel();
 begin
-  Model.assignment.points := PointsEdit.Value;
-  Model.assignment.items  := ItemsEdit.Value;
-  Model.mistakes.major    := MajorEdit.Value;
-  Model.mistakes.minor    := MinorEdit.Value;
+  Model.assignment.points  := PointsEdit.Value;
+  Model.assignment.items   := ItemsEdit.Value;
+  Model.mistakes.entire    := EntireEdit.Value;
+  Model.mistakes.huge      := HugeEdit.Value;
+  Model.mistakes.normal    := NormalEdit.Value;
+  Model.mistakes.tiny      := TinyEdit.Value;
+
 end;
 procedure TMainForm.UpdateAll();
 begin
@@ -80,9 +93,14 @@ begin
   UpdateAll();
 end;
 
+procedure TMainForm.HugeEditChange(Sender: TObject);
+begin
+  UpdateAll();
+end;
+
 procedure TMainForm.PanelClick(Sender: TObject);
 begin
-
+  UpdateAll();
 end;
 
 procedure TMainForm.Button1Click(Sender: TObject);
@@ -100,12 +118,17 @@ begin
   UpdateAll();
 end;
 
-procedure TMainForm.MinorEditChange(Sender: TObject);
+procedure TMainForm.NormalEditChange(Sender: TObject);
 begin
   UpdateAll();
 end;
 
-procedure TMainForm.MajorEditChange(Sender: TObject);
+procedure TMainForm.EntireEditChange(Sender: TObject);
+begin
+  UpdateAll();
+end;
+
+procedure TMainForm.TinyEditChange(Sender: TObject);
 begin
   UpdateAll();
 end;
