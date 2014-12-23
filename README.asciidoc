@@ -1,0 +1,34 @@
+Grader
+======
+A simple tool for grading
+
+image::http://i.imgur.com/GNyPiHN.png["Name", align="center"]
+
+Grader is a simple subtractive grading tool.  The starting grade of an assignment is the total point value
+of the assignment.  Each mistake (of several types) is counted while grading the document, and the score is automatically lowered.  When the last mistake has been entered, the assignment has been graded.
+
+== Features ==
+
+- Partial mistakes(1/2, 1/4, 1/8)
+- Subtractive, not additive
+- Total score and grading scale that update automatically
+
+
+== Building ==
+First clone the project from github and open the project in Lazarus.  Grader can then be run by clicking the Run item from the Run menu.
+
+== Usage ==
+
+Enter the total worth of the project and the total number of graded items into the ''Points'' and ''Items'' fields.
+
+Enter the number of each severity level of mistake:
+ 
+  - Entire - the ''entire'' problem 
+  - Huge   - a ''huge'' mistake (1/2th points)
+  - Normal - a ''normal'' sized mistake (1/4th points)
+  - Tiny   - a ''trivial'' mistake (1/8th points)
+
+The total grade and the grading scale are updated automatically:
+
+  - Total grade: the final grade of the assignment
+  - Scale: the worth in points of each level of mistake(entire, huge, normal, tiny)
