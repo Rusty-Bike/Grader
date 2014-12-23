@@ -63,8 +63,20 @@ implementation
 
 { TMainForm }
 procedure TMainForm.UpdateView();
+var
+  percent: double;
+  points: double;
 begin
-    ScoreLabel.Caption := FormatFloat('####0.###', Model.result.earned) + ' / ' + IntToStr(Model.assignment.points) + ': ' + FormatFloat('####0.##', Model.result.percent * 100) + '%';
+    percent := 0;
+    points := 0;
+
+    if Model.result.percent >= 0 then
+      percent := Model.result.percent;
+
+    if Model.result.earned >= 0 then
+      points := Model.result.earned;
+
+    ScoreLabel.Caption := FormatFloat('####0.###', points) + ' / ' + IntToStr(Model.assignment.points) + ': ' + FormatFloat('####0.##', percent * 100) + '%';
     EntireScaleLabel.Caption := 'Entire: ' + FormatFloat('####0.###', Model.result.key.entire);
     HugeScaleLabel.Caption:= ' Huge: ' +  FormatFloat('####0.###', Model.result.key.huge);
     NormalScaleLabel.Caption := 'Normal: ' + FormatFloat('####0.###', Model.result.key.normal);
@@ -79,7 +91,6 @@ begin
   Model.mistakes.huge      := HugeEdit.Value;
   Model.mistakes.normal    := NormalEdit.Value;
   Model.mistakes.tiny      := TinyEdit.Value;
-
 end;
 procedure TMainForm.UpdateAll();
 begin

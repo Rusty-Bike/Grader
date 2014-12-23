@@ -1,36 +1,40 @@
 object MainForm: TMainForm
-  Left = 294
-  Height = 325
-  Top = 150
-  Width = 318
+  Left = 331
+  Height = 312
+  Top = 151
+  Width = 304
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsDialog
   Caption = 'Grading Calculator'
-  ClientHeight = 325
-  ClientWidth = 318
+  ClientHeight = 312
+  ClientWidth = 304
   OnCreate = FormCreate
   Position = poScreenCenter
   LCLVersion = '1.0.10.0'
   object PointsEdit: TSpinEdit
-    Left = 88
+    Left = 80
     Height = 27
     Top = 8
     Width = 50
+    MaxValue = 1000
+    MinValue = 1
     OnChange = PointsEditChange
     TabOrder = 0
     Value = 10
   end
   object ItemsEdit: TSpinEdit
-    Left = 216
+    Left = 208
     Height = 27
     Top = 8
     Width = 50
+    MaxValue = 1000
+    MinValue = 1
     OnChange = ItemsEditChange
     TabOrder = 1
     Value = 20
   end
   object ItemsLabel: TLabel
-    Left = 168
+    Left = 160
     Height = 18
     Top = 8
     Width = 32
@@ -38,7 +42,7 @@ object MainForm: TMainForm
     ParentColor = False
   end
   object PointsLabel: TLabel
-    Left = 32
+    Left = 24
     Height = 18
     Top = 8
     Width = 38
@@ -46,9 +50,9 @@ object MainForm: TMainForm
     ParentColor = False
   end
   object GroupBox: TGroupBox
-    Left = 16
+    Left = 8
     Height = 96
-    Top = 48
+    Top = 40
     Width = 288
     Caption = '# Mistakes:'
     ClientHeight = 79
@@ -73,6 +77,7 @@ object MainForm: TMainForm
       Height = 25
       Top = 7
       Width = 50
+      MaxValue = 1000
       OnChange = EntireEditChange
       TabOrder = 0
     end
@@ -92,14 +97,16 @@ object MainForm: TMainForm
       Height = 25
       Top = 41
       Width = 50
+      MaxValue = 1000
       OnChange = NormalEditChange
       TabOrder = 1
     end
     object TinyEdit: TSpinEdit
-      Left = 198
+      Left = 192
       Height = 25
       Top = 41
       Width = 50
+      MaxValue = 1000
       OnChange = TinyEditChange
       TabOrder = 2
     end
@@ -115,10 +122,11 @@ object MainForm: TMainForm
       ParentFont = False
     end
     object HugeEdit: TSpinEdit
-      Left = 198
+      Left = 192
       Height = 25
       Top = 7
       Width = 50
+      MaxValue = 1000
       OnChange = HugeEditChange
       TabOrder = 3
     end
@@ -135,9 +143,9 @@ object MainForm: TMainForm
     end
   end
   object Panel: TPanel
-    Left = 16
+    Left = 8
     Height = 136
-    Top = 176
+    Top = 168
     Width = 288
     BevelInner = bvLowered
     ClientHeight = 136
@@ -222,9 +230,9 @@ object MainForm: TMainForm
     end
   end
   object GradeScaleLabel: TStaticText
-    Left = 16
+    Left = 8
     Height = 33
-    Top = 144
+    Top = 136
     Width = 304
     Alignment = taCenter
     Caption = 'Grade / Scale'
