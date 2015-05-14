@@ -18,8 +18,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="gui"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="25"/>
-        <CursorPos X="47" Y="37"/>
+        <TopLine Value="125"/>
+        <CursorPos Y="128"/>
         <UsageCount Value="28"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -53,123 +53,123 @@
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="gui.pas"/>
-        <Caret Line="60" Column="48" TopLine="46"/>
+        <Caret Line="61" Column="77" TopLine="46"/>
       </Position1>
       <Position2>
         <Filename Value="gui.pas"/>
-        <Caret Line="60" Column="57" TopLine="46"/>
+        <Caret Line="60" Column="48" TopLine="46"/>
       </Position2>
       <Position3>
         <Filename Value="gui.pas"/>
-        <Caret Line="53" Column="59" TopLine="47"/>
+        <Caret Line="60" Column="57" TopLine="46"/>
       </Position3>
       <Position4>
         <Filename Value="gui.pas"/>
-        <Caret Line="54" Column="59" TopLine="48"/>
+        <Caret Line="53" Column="59" TopLine="47"/>
       </Position4>
       <Position5>
         <Filename Value="gui.pas"/>
-        <Caret Line="59" Column="114" TopLine="54"/>
+        <Caret Line="54" Column="59" TopLine="48"/>
       </Position5>
       <Position6>
         <Filename Value="gui.pas"/>
-        <Caret Line="63" Column="114" TopLine="58"/>
+        <Caret Line="59" Column="114" TopLine="54"/>
       </Position6>
       <Position7>
         <Filename Value="gui.pas"/>
-        <Caret Line="112" Column="65" TopLine="84"/>
+        <Caret Line="63" Column="114" TopLine="58"/>
       </Position7>
       <Position8>
         <Filename Value="gui.pas"/>
-        <Caret Line="113" Column="3" TopLine="95"/>
+        <Caret Line="112" Column="65" TopLine="84"/>
       </Position8>
       <Position9>
         <Filename Value="gui.pas"/>
-        <Caret Line="118" Column="3" TopLine="95"/>
+        <Caret Line="113" Column="3" TopLine="95"/>
       </Position9>
       <Position10>
         <Filename Value="gui.pas"/>
-        <Caret Line="113" Column="3" TopLine="95"/>
+        <Caret Line="118" Column="3" TopLine="95"/>
       </Position10>
       <Position11>
         <Filename Value="gui.pas"/>
-        <Caret Line="118" Column="3" TopLine="95"/>
+        <Caret Line="113" Column="3" TopLine="95"/>
       </Position11>
       <Position12>
         <Filename Value="gui.pas"/>
-        <Caret Line="113" Column="3" TopLine="95"/>
+        <Caret Line="118" Column="3" TopLine="95"/>
       </Position12>
       <Position13>
         <Filename Value="gui.pas"/>
-        <Caret Line="124" Column="3" TopLine="101"/>
+        <Caret Line="113" Column="3" TopLine="95"/>
       </Position13>
       <Position14>
         <Filename Value="gui.pas"/>
-        <Caret Line="95" Column="3" TopLine="93"/>
+        <Caret Line="124" Column="3" TopLine="101"/>
       </Position14>
       <Position15>
         <Filename Value="gui.pas"/>
-        <Caret Line="100" Column="15" TopLine="95"/>
+        <Caret Line="95" Column="3" TopLine="93"/>
       </Position15>
       <Position16>
         <Filename Value="gui.pas"/>
-        <Caret Line="85" Column="7" TopLine="72"/>
+        <Caret Line="100" Column="15" TopLine="95"/>
       </Position16>
       <Position17>
         <Filename Value="gui.pas"/>
-        <Caret Line="78" Column="5" TopLine="67"/>
+        <Caret Line="85" Column="7" TopLine="72"/>
       </Position17>
       <Position18>
         <Filename Value="gui.pas"/>
-        <Caret Line="77" Column="46" TopLine="67"/>
+        <Caret Line="78" Column="5" TopLine="67"/>
       </Position18>
       <Position19>
         <Filename Value="gui.pas"/>
-        <Caret Line="75" Column="41" TopLine="67"/>
+        <Caret Line="77" Column="46" TopLine="67"/>
       </Position19>
       <Position20>
         <Filename Value="gui.pas"/>
-        <Caret Line="77" Column="41" TopLine="69"/>
+        <Caret Line="75" Column="41" TopLine="67"/>
       </Position20>
       <Position21>
         <Filename Value="gui.pas"/>
-        <Caret Line="121" Column="16" TopLine="109"/>
+        <Caret Line="77" Column="41" TopLine="69"/>
       </Position21>
       <Position22>
         <Filename Value="gui.pas"/>
-        <Caret Line="75" Column="41" TopLine="65"/>
+        <Caret Line="121" Column="16" TopLine="109"/>
       </Position22>
       <Position23>
         <Filename Value="gui.pas"/>
-        <Caret Line="73" Column="41" TopLine="91"/>
+        <Caret Line="75" Column="41" TopLine="65"/>
       </Position23>
       <Position24>
         <Filename Value="gui.pas"/>
-        <Caret Line="121" Column="12" TopLine="106"/>
+        <Caret Line="73" Column="41" TopLine="91"/>
       </Position24>
       <Position25>
         <Filename Value="gui.pas"/>
-        <Caret Line="39" Column="24" TopLine="28"/>
+        <Caret Line="121" Column="12" TopLine="106"/>
       </Position25>
       <Position26>
         <Filename Value="gui.pas"/>
-        <Caret Line="41" Column="15" TopLine="27"/>
+        <Caret Line="39" Column="24" TopLine="28"/>
       </Position26>
       <Position27>
         <Filename Value="gui.pas"/>
-        <Caret Line="40" Column="50" TopLine="27"/>
+        <Caret Line="41" Column="15" TopLine="27"/>
       </Position27>
       <Position28>
         <Filename Value="gui.pas"/>
-        <Caret Line="121" Column="12" TopLine="103"/>
+        <Caret Line="40" Column="50" TopLine="27"/>
       </Position28>
       <Position29>
         <Filename Value="gui.pas"/>
-        <Caret Line="135" Column="54" TopLine="129"/>
+        <Caret Line="121" Column="12" TopLine="103"/>
       </Position29>
       <Position30>
         <Filename Value="gui.pas"/>
-        <Caret Line="128" TopLine="125"/>
+        <Caret Line="135" Column="54" TopLine="129"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>

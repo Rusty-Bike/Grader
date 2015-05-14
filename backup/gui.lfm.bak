@@ -241,7 +241,7 @@ object MainForm: TMainForm
     ParentFont = False
     TabOrder = 4
   end
-  object NextButton: TButton
+  object Button1: TButton
     Left = 8
     Height = 48
     Top = 312

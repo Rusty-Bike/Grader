@@ -14,7 +14,7 @@ type
 
   TMainForm = class(TForm)
     Bevel: TBevel;
-    NextButton: TButton;
+    Button1: TButton;
     HugeLabel: TLabel;
     GroupBox: TGroupBox;
     ItemsLabel: TLabel;
